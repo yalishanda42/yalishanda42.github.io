@@ -5,10 +5,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={icon} className="App-icon" alt="logo" />
-        <h1>
-          Това съм аз
-        </h1>
+        <img src={icon} className="App-icon" alt="icon" />
+        <h1>Сайт</h1>
       </header>
     </div>
   );
