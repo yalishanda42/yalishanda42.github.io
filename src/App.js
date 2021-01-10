@@ -37,7 +37,6 @@ class App extends React.Component {
                 : "Кликни ме"
               }
             </AwesomeButton>
-            <h6></h6>
           </div>
           <div>
             <SocialIcon className="App-social-icon" url="https://github.com/allexks"/>
