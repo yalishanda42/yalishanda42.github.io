@@ -2,21 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-icon {
-  height: 240px;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -31,10 +16,14 @@
   margin-top: 100px;
 }
 
-.socialicon {
+.App-link {
+  color: #61dafb;
+}
+
+.App-social-icon {
   margin: 0 10px 10px 0;
 }
 
-.nothingbutton {
-  margin: 20px;
+.App-nothing-button {
+  margin: 20px 0;
 }

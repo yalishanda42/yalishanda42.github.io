@@ -25,7 +25,7 @@ class App extends React.Component {
       <div className="App">
         <header className="App-header">
           <h1>Сайт</h1>
-          <div className="nothingbutton">
+          <div className="App-nothing-button">
             <AwesomeButton
               type="primary"
               ripple
@@ -40,9 +40,9 @@ class App extends React.Component {
             <h6></h6>
           </div>
           <div>
-            <SocialIcon className="socialicon" url="https://github.com/allexks"/>
-            <SocialIcon className="socialicon" url="https://www.linkedin.com/in/alexander-ignatov-053b53b3/"/>
-            <SocialIcon className="socialicon" url="https://reddit.com/u/allexks"/>
+            <SocialIcon className="App-social-icon" url="https://github.com/allexks"/>
+            <SocialIcon className="App-social-icon" url="https://www.linkedin.com/in/alexander-ignatov-053b53b3/"/>
+            <SocialIcon className="App-social-icon" url="https://reddit.com/u/allexks"/>
           </div>
         </header>
         <CookieNotice
