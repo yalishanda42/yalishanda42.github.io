@@ -46,11 +46,11 @@ class App extends React.Component {
         </header>
         <CookieNotice
           acceptButtonLabel="Разбрах"
-          readMoreButtonLabel="Ама искам бисквитки"
+          readMoreButtonLabel="Ама бисквитки"
           readMoreButtonLink="http://armenskipop.com/"
           cookieTextLabel="Този сайт не използва бисквиди."
-          cookieExpiration="1"
-          darkTheme="true"
+          cookieExpiration={1}
+          darkTheme={true}
         />
       </div>
     );
