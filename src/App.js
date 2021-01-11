@@ -25,6 +25,7 @@ class App extends React.Component {
       <div className="App">
         <header className="App-header">
           <h1>Сайт</h1>
+          <p>Това е сайт.</p>
           <div className="App-nothing-button">
             <AwesomeButton
               type="primary"
@@ -39,6 +40,7 @@ class App extends React.Component {
             </AwesomeButton>
           </div>
           <div>
+            <p>А това е AI.</p>
             <SocialIcon className="App-social-icon" url="https://github.com/allexks"/>
             <SocialIcon className="App-social-icon" url="https://www.linkedin.com/in/alexander-ignatov-053b53b3/"/>
             <SocialIcon className="App-social-icon" url="https://reddit.com/u/allexks"/>

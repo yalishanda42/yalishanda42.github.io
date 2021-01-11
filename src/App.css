@@ -27,3 +27,38 @@
 .App-nothing-button {
   margin: 20px 0;
 }
+
+@media (max-width: 1048px) {
+  /* cookies banner fix */
+  .dVhsRX {
+      margin-left: 36px !important;
+      margin-right: 36px !important;
+      margin-bottom: 72px !important;
+  }
+}
+
+/* Fixes for the chat widget */
+
+.aco-wrapper {
+  border-radius: 32px;
+}
+
+.aco-nav .default-nav {
+  background-color: rgb(42, 50, 67) !important;
+  border-top: none !important;
+  border-left: none !important;
+  border-right: none !important;
+}
+
+.message-wrapper.them .text-wrapper,
+.message-wrapper.them .circle-wrapper {
+  background: rgb(72, 85, 113) !important;
+}
+
+.message-wrapper .circle-wrapper {
+  display: none;
+}
+
+.circle-wrapper {
+  display: hidden;
+}
