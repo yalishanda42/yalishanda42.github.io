@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/yalishanda
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://allexks.github.io
+  * I am yalishanda (https://keybase.io/yalishanda) on keybase.
+  * I have a public key ASDvWTlDhotGttjM7gnAvYqYrsn2Y52FEAIcyCRj7A40Ewo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120ef593943868b46b6d8ccee09c0bd8a98aec9f6639d8510021cc82463ec0e34130a",
+      "host": "keybase.io",
+      "kid": "0120ef593943868b46b6d8ccee09c0bd8a98aec9f6639d8510021cc82463ec0e34130a",
+      "uid": "d25291e7a606f06692c4af740f66ff19",
+      "username": "yalishanda"
+    },
+    "merkle_root": {
+      "ctime": 1612214436,
+      "hash": "3d54b6768d47592958fe9112d15e90312d79c5b7b224fc564d2d430342a20d0ce9eb12130bb7831a8852bcbf03f5a2cc522edc14b961cdad40703c2c73d8faba",
+      "hash_meta": "d26a162b9317d0137d4beee13a91abfe79367766168a693a5cfacb445e8569f3",
+      "seqno": 18979688
+    },
+    "service": {
+      "entropy": "Ro+0Yq3pCmGrQTbjmDfsPXRK",
+      "hostname": "allexks.github.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.6.0"
+  },
+  "ctime": 1612214463,
+  "expire_in": 504576000,
+  "prev": "1650d719be1ce80cd1865295fbfe32a64d4e68ea600de24765a98655ee41ec09",
+  "seqno": 29,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg71k5Q4aLRrbYzO4JwL2KmK7J9mOdhRACHMgkY+wONBMKp3BheWxvYWTESpcCHcQgFlDXGb4c6AzRhlKV+/4ypk1OaOpgDeJHZamGVe5B7AnEIA6pnxMjDpdZZZOVRcfpsl8Xr/zoS6dyKyiEmngG3nIMAgHCo3NpZ8RA39XrhYE9pI5JIDLVUyj0kvsHAsnkAsqmRjOEQvUalDQB7kmEbeMCgF1GAbgqbEQv1h7JOmIuKgWpL/Fe1R2gAqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIOoEGRNhQlAnEZlfOuUuC6cY4exIO5vP7Vwv/MylWFc0o3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/yalishanda
+
+==================================================================
