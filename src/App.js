@@ -34,13 +34,13 @@ class App extends React.Component {
             >
               {
               this.state.nothingButtonClicked
-                ? "И защо ме кликна сега?"
+                ? "Защо ме кликаш?"
                 : "Кликни ме"
               }
             </AwesomeButton>
           </div>
           <div>
-            <p>А това е AI.</p>
+            <p>А това съм аз:</p>
             <SocialIcon className="App-social-icon" url="https://github.com/allexks"/>
             <SocialIcon className="App-social-icon" url="https://www.linkedin.com/in/alexander-ignatov-053b53b3/"/>
             <SocialIcon className="App-social-icon" url="https://reddit.com/u/allexks"/>
