@@ -41,9 +41,9 @@ class App extends React.Component {
           </div>
           <div>
             <p>А това съм аз:</p>
-            <SocialIcon className="App-social-icon" url="https://github.com/allexks"/>
-            <SocialIcon className="App-social-icon" url="https://www.linkedin.com/in/alexander-ignatov-053b53b3/"/>
-            <SocialIcon className="App-social-icon" url="https://reddit.com/u/allexks"/>
+            <SocialIcon target="_blank" className="App-social-icon" url="https://github.com/allexks"/>
+            <SocialIcon target="_blank" className="App-social-icon" url="https://www.linkedin.com/in/alexander-ignatov-053b53b3/"/>
+            <SocialIcon target="_blank" className="App-social-icon" url="https://reddit.com/u/allexks"/>
           </div>
         </header>
         <CookieNotice
