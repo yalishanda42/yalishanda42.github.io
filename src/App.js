@@ -34,7 +34,7 @@ class App extends React.Component {
             >
               {
               this.state.nothingButtonClicked
-                ? "Защо ме кликаш?"
+                ? "Мерси"
                 : "Кликни ме"
               }
             </AwesomeButton>
