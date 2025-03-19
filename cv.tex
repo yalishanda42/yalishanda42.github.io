@@ -22,34 +22,31 @@
 \titleformat{\subsection}{\bfseries\color{primary}}{\thesubsection}{1em}{}
 \titlespacing{\subsection}{0pt}{8pt}{4pt}
 
-% Header command
+
 \newcommand{\cvheader}[6]{
     \begin{center}
         \includegraphics[width=0.25\textwidth]{#6} \\[4pt]
-        {\Huge\textbf{#1}}\\[4pt]
-        {\large #2}\\[2pt]
-        \faEnvelope\ #3 \quad \faPhone\ #4 \\[2pt]
-        \faLinkedin\ #5
+            {\Huge\textbf{#1}}\\[4pt]
+            {\large #2}\\[2pt]
+            \faEnvelope\ #3 \quad \faPhone\ #4 \\[2pt]
+            \faLinkedin\ \href{#5}{#5}
     \end{center}
 }
 
-% Experience block command
-\newcommand{\workblock}[5]{
-    \noindent \textbf{#1} \\
-    \textbf{#2} \\
-    \textit{@ #3} \\
-    \textit{#4} \\
-    #5
+\newcommand{\workblock}[4]{
+    \begin{tabular}{p{0.25\columnwidth}p{0.65\columnwidth}}
+        \textbf{#1} & \textbf{#2} \\
+        #3 & #4 \\
+    \end{tabular}
 }
 
-% Skills command
 \newcommand{\skillgroup}[2]{
     \textbf{#1}: #2 \\
 }
 
+
 \begin{document}
-`'
-% Header
+
 \cvheader{Alexander Ignatov}
          {AI}
          {alexander.ignatov.42@gmail.com}
@@ -57,69 +54,113 @@
          {https://linkedin.com/in/alexander-ignatov-yalishanda}
          {az.jpg}
 
-% Summary
+
 \section{Summary}
 Replace this text with a brief professional summary highlighting your expertise, experience, and career goals.
+    
 
-% Three-column work experience
 \section{Professional Experience}
-\begin{multicols}{3}
-    \subsection{Full Time Jobs}
+    \subsection{Full Time Positions}
     \workblock{2024/02 - Present}{AI/ML Engineer}
-    {Bronia AI}{Sofia}{
+    {Bronia AI}{
         \begin{itemize}
-            \item Key achievement or responsibility asdasd asd as dsa d
-            \item Another significant contribution
-            \item Technical skill demonstrated
+            \item Co-author a publication (currently in proceedings)
+            \item Research and develop ways of detecting acoustic events with the aim of protection
+            \item Use advanced sound augmentation techniques to tackle the domain generalization problem
+            \item Compare transfer learning to classical learning methods
+            \item Analyze in-depth the performance of different models and their hyperparameters
+            \item Use Edge TPU optimizations and quantization techniques
+            \item Create an MLOps setup for cloud experimentation and deployment
+            \item Be part of a growing small startup (team of less than 10 people)
         \end{itemize}
     }
 
     \workblock{2023/09 - 2023/12}{AI/ML Engineer}
-    {Smule}{Sofia}{
+    {Smule}{
         \begin{itemize}
-            \item Key achievement or responsibility asdasd asd as dsa d
-            \item Another significant contribution
-            \item Technical skill demonstrated
+            \item Big Data analysis (trillions of user events)
+            \item Various infrastructure tooling used - Snowflake, Luigi, Google Cloud, Docker, Kubernetes, Grafana, Kafka, Redis, Apache Flink, Spark, MLFlow, TeamCity
+            \item Researched and worked on improving a state-of-the-art music-related segmentation model (uses lyrics and audio features)
+            \item Worked in teams of a few people
         \end{itemize}
     }
     
-    \columnbreak
+    \workblock{2022/06 - 2023/09}{iOS Engineer}
+    {Smule}{
+        \begin{itemize}
+            \item Developed new features that directly affect millions of users
+            \item Worked woth a custom state-machine-based declarative architecture and designed custom software components
+            \item Wrote extensive documentation for new features
+            \item Tackled complex issues in a massive mixed codebase (both Obj-C and Swift, both legacy and new components)
+            \item Helped develop a Design System package
+            \item Helped research and establish new techniques and processes across teams
+        \end{itemize}
+    }
+
+    \workblock{2019/04 - 2022/06}{Intern to Junior to Mid iOS Engineer}
+    {MentorMate}{
+        \begin{itemize}
+            \item Develop iOS apps in Swift
+            \item Develop iOS and Android apps in C\# with Xamarin Native
+            \item Maintain iOS apps using Objective-C
+            \item Implement different architectural styles and design patterns (MVC, MVVM, Redux) with and without third-party libraries
+            \item Use first- and third-party frameworks and libraries: MapKit, CoreData, SwiftUI, Combine, Alamofire, RxSwift, Realm, etc
+            \item Work in teams using the Scrum methodology
+        \end{itemize}
+    }
+
+    \workblock{2018/02 - 2019/04}{Full-Stack Website Developer}
+    {IP Consulting}{
+        \begin{itemize}
+            \item Develop and maintain back-end in PHP
+            \item Develop and maintain front-end using jQuery
+            \item Maintain software database (MySQL)
+            \item Maintain LAMP stack
+            \item Participate in the 2018 Taiwan Innovation Expo
+            \item Co-inventor of BPO utility model \#4115
+        \end{itemize}
+    }
     
-    \subsection{Part Time Jobs}
+    \subsection{Part Time Positions}
     \workblock{2021 - Present}{Software Architect}
-    {Sathub}{Sofia}{
+    {Sathub}{
         \begin{itemize}
-            \item Key achievement or responsibility
-            \item Another significant contribution
-            \item Technical skill demonstrated
+            \item Design and implement software components for a EU navy defense project (for government clients) 
+            \item Work with geospacial and OSINT data 
+            \item Set up software product infrastructure (containerization, databases, servers, etc) 
+            \item Collaborate with leading European manufacturing and tech enterprises
         \end{itemize}
     }
     
-    \columnbreak
     
     \subsection{Part Time Teachings}
     \workblock{2022/10 - Present}{Lecturer}
-    {Sofia University, FMI}{Sofia}{
-        \begin{itemize}
-            \item Key achievement or responsibility
-            \item Another significant contribution
-            \item Technical skill demonstrated
-        \end{itemize}
+    {Sofia University, FMI}{
+        Teaching and grading students who participate in 
+        the elective discipline \textbf{"Python Programming"} 
+        that I co-created with 2 colleagues and friends of mine.
+        (\href{https://github.com/fmipython}{GitHub repo})
     }
-\end{multicols}
+
+    \workblock{2020/10 - 2021/06}{Teaching Assistant}
+    {Sofia University, FMI}{
+        Teaching and grading first-grade students in the discipline
+        \textbf{"Object-Oriented Programming"}.
+    }
 
 
-% Education
+
 \section{Education}
 
-% Skills
-\section{Skills}
-\skillgroup{Technical}{List your technical skills here}
-\skillgroup{Software}{List software proficiencies here}
-\skillgroup{Languages}{List languages you speak here}
+\workblock{2021 - 2023}{M.Sc. in Artificial Intelligence}
+{Sofia University, FMI}{
+}
 
-% Projects or Publications
-\section{Projects / Publications}
+\workblock{2017 - 2021}{B.Sc. in Software Engineering}
+{Sofia University, FMI}{
+}
+
+\section{Publications}
 \begin{itemize}[leftmargin=*]
     \item \textbf{Project/Publication Title} - Brief description
     \item \textbf{Project/Publication Title} - Brief description
