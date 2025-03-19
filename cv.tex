@@ -1,0 +1,128 @@
+\documentclass[11pt,a4paper]{article}
+
+% Packages
+\usepackage[margin=2cm]{geometry}
+\usepackage{multicol}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\usepackage{fontawesome}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{graphicx}
+
+% Colors
+\definecolor{primary}{RGB}{70,130,180}
+\definecolor{secondary}{RGB}{220,220,220}
+
+% Section formatting
+\titleformat{\section}{\Large\bfseries\color{primary}}{\thesection}{1em}{}[\titlerule]
+\titlespacing{\section}{0pt}{12pt}{8pt}
+
+\titleformat{\subsection}{\bfseries\color{primary}}{\thesubsection}{1em}{}
+\titlespacing{\subsection}{0pt}{8pt}{4pt}
+
+% Header command
+\newcommand{\cvheader}[6]{
+    \begin{center}
+        \includegraphics[width=0.25\textwidth]{#6} \\[4pt]
+        {\Huge\textbf{#1}}\\[4pt]
+        {\large #2}\\[2pt]
+        \faEnvelope\ #3 \quad \faPhone\ #4 \\[2pt]
+        \faLinkedin\ #5
+    \end{center}
+}
+
+% Experience block command
+\newcommand{\workblock}[5]{
+    \noindent \textbf{#1} \\
+    \textbf{#2} \\
+    \textit{@ #3} \\
+    \textit{#4} \\
+    #5
+}
+
+% Skills command
+\newcommand{\skillgroup}[2]{
+    \textbf{#1}: #2 \\
+}
+
+\begin{document}
+`'
+% Header
+\cvheader{Alexander Ignatov}
+         {AI}
+         {alexander.ignatov.42@gmail.com}
+         {+359898842297}
+         {https://linkedin.com/in/alexander-ignatov-yalishanda}
+         {az.jpg}
+
+% Summary
+\section{Summary}
+Replace this text with a brief professional summary highlighting your expertise, experience, and career goals.
+
+% Three-column work experience
+\section{Professional Experience}
+\begin{multicols}{3}
+    \subsection{Full Time Jobs}
+    \workblock{2024/02 - Present}{AI/ML Engineer}
+    {Bronia AI}{Sofia}{
+        \begin{itemize}
+            \item Key achievement or responsibility asdasd asd as dsa d
+            \item Another significant contribution
+            \item Technical skill demonstrated
+        \end{itemize}
+    }
+
+    \workblock{2023/09 - 2023/12}{AI/ML Engineer}
+    {Smule}{Sofia}{
+        \begin{itemize}
+            \item Key achievement or responsibility asdasd asd as dsa d
+            \item Another significant contribution
+            \item Technical skill demonstrated
+        \end{itemize}
+    }
+    
+    \columnbreak
+    
+    \subsection{Part Time Jobs}
+    \workblock{2021 - Present}{Software Architect}
+    {Sathub}{Sofia}{
+        \begin{itemize}
+            \item Key achievement or responsibility
+            \item Another significant contribution
+            \item Technical skill demonstrated
+        \end{itemize}
+    }
+    
+    \columnbreak
+    
+    \subsection{Part Time Teachings}
+    \workblock{2022/10 - Present}{Lecturer}
+    {Sofia University, FMI}{Sofia}{
+        \begin{itemize}
+            \item Key achievement or responsibility
+            \item Another significant contribution
+            \item Technical skill demonstrated
+        \end{itemize}
+    }
+\end{multicols}
+
+
+% Education
+\section{Education}
+
+% Skills
+\section{Skills}
+\skillgroup{Technical}{List your technical skills here}
+\skillgroup{Software}{List software proficiencies here}
+\skillgroup{Languages}{List languages you speak here}
+
+% Projects or Publications
+\section{Projects / Publications}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Project/Publication Title} - Brief description
+    \item \textbf{Project/Publication Title} - Brief description
+\end{itemize}
+
+\end{document}
